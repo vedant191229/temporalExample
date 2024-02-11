@@ -1,0 +1,13 @@
+# Server settings
+server:
+  applicationConnectors:
+    - type: http
+      port: 8080  # Specify the port for HTTP traffic
+  adminConnectors:
+    - type: http
+      port: 8081  # Specify the port for admin (management) tasks
+
+logging:
+  level: INFO
+  loggers:
+    com.temporal: DEBUG
